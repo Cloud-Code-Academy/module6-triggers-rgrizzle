@@ -343,7 +343,7 @@ public with sharing class TriggerTest {
             Account testAccount = new Account(Name = 'Test Account ' + i);
             accountsToInsert.add(testAccount);
         }
-        
+        System.debug(accountsToInsert);
         insert accountsToInsert;
 
         List<Contact> contactsToInsert = new List<Contact>();
